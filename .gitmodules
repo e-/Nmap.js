@@ -1,0 +1,3 @@
+[submodule "example/TreeColors.js"]
+	url = https://github.com/e-/TreeColors.js.git
+	path = example/TreeColors.js

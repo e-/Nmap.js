@@ -1,0 +1,106 @@
+html, body{
+  height:100%;
+  overflow:hidden;
+  font-family: 'Open Sans', sans-selif;
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+}
+
+#left{
+  position:absolute;
+  width: 380px;
+  height:100%;
+  top:0;
+  left:0;
+}
+
+#right{
+  margin-left: 380px;
+  height:100%;
+  width:100%;
+}
+
+#control-panel{
+  position:absolute;
+  width:380px;
+  height:100%;
+  margin:0;
+}
+
+#map-panel{
+  position:absolute;
+  margin:0;
+  width:380px;
+  bottom:0;
+  margin:0px;
+}
+
+#map-panel .panel-body{
+  background:#fafafa;
+}
+
+.panel-heading{
+  padding-top:3px;
+  padding-bottom:3px;
+  color:#ccc !important;
+  font-weight: 700;
+  letter-spacing: 0px;
+  text-transform:uppercase;
+}
+
+.rectangle{
+  border-radius:0;
+}
+
+text{
+  font-family: 'Open Sans', 'Malgun Gothic';
+  pointer-events: none;
+  fill: #333;
+  text-anchor:middle;
+  alignment-baseline:central;
+}
+
+.no-padding{
+  padding:0px;
+}
+
+#detail{
+  font-family: 'Open Sans', 'Malgun Gothic';
+  width:100%;
+  margin-bottom:0px;
+}
+
+#detail td, #detail th{
+  padding:4px 10px;
+  font-size:2.5em;
+}
+
+
+.tac{
+  text-align:center !important;
+}
+
+#detail th{
+}
+
+#detail td{
+  text-align:right;
+}
+
+#city-name{
+  border-top:none;
+  text-align:center;
+  font-weight:bold;
+  font-size:3.5em;
+}
+
+.br {
+  border-right: 1px solid #ddd;
+}
+
+#help{
+  padding-left:10px;
+  margin:0;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Nmap example</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="right">
+      <svg id="nmap"></svg>
+    </div>
+    <div id="left">
+      <div class="panel panel-default rectangle" id="control-panel">
+        <div class="panel-heading rectangle">
+          Detail
+        </div>
+        <div class="panel-body rectangle no-padding">
+          <table id="detail" class="table table-striped">
+            <tr> 
+              <th id="city-name">&nbsp;</th>
+            </tr>
+            <tr>
+              <td><span id="population"></span>&nbsp;명</td>
+            </tr>  
+          </table>
+        </div>
+
+        <div class="panel-heading rectangle" style="border-top: 1px solid #ddd;">
+          Help
+        </div>
+        <div class="panel-body rectangle">
+          <ul id="help">
+            <li><span class="label label-default">Hover</span> : Show the corresponding region on the map</li>
+            <li><span class="label label-default">Click</span> : Drill down</li>
+            <li><span class="label label-default">Secondary Click</span> : Roll up</li>
+          </ul>
+        </div>
+      </div>
+      <div class="panel panel-default rectangle" id="map-panel">
+        <div class="panel-heading rectangle">
+          Map
+        </div>
+        <div class="panel-body rectangle">
+          <svg id="map" width="100%" height="500"></svg>
+        </div>
+      </div>
+    </div>
+    <script data-main="app.js" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.19/require.min.js"></script>
+  </body>
+</html>
